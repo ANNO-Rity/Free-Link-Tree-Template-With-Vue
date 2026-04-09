@@ -1,64 +1,68 @@
-:root {
+/* Pastikan font terimport jika menggunakan Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+.container {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
-    color: #444;
-    text-align: center;
-    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
 }
 
 #photo-frame {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background: #fff;
-    margin: 0 auto 20px;
+    margin-bottom: 20px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 8px;
     color: #333;
-    font-weight: 600;
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #666;
     font-weight: 300;
-    margin-bottom: 20px;
-    font-weight: 300;
-    color: #555;
 }
 
 button {
-    width: 65%;
-    margin: 12px auto;
-    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 15px;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     background: linear-gradient(90deg, #ffecd2, #fcb69f);
     color: #333;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.4s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 button:hover {
-transform: translateY(-3px);
-    background: linear-gradient(90deg, #fcb69f, #ffecd2);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 #footer {
     margin-top: 40px;
-    font-size: 18px;
-    color: #4d4d4d;
-    a {
-        color: #076b45;
-        text-decoration: none;
-        font-weight: 500;
-    }
+    font-size: 14px;
+    color: #666;
+}
+
+#footer a {
+    color: #076b45;
+    text-decoration: none;
+    font-weight: 600;
 }

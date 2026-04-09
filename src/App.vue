@@ -1,15 +1,16 @@
 <script setup>
-import HelloWorld from './components/main.vue'
+import main_app from './components/main.vue'
 </script>
 
 <template>
-  <HelloWorld />
+  <main_app />
 </template>
 
-<style scoped>
-:root {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  background-attachment: fixed;
 }
 </style>
